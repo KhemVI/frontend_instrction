@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Playground</title>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+  </style>
+</head>
+<body>
+  <button onClick="functionYouLike(1150)">Call Pizza</button>
+  <button onClick="functionYouLike(191)">Call Police</button>
+  <div id="your-id">Heyyyyyyyyyy</div>
+  <script>
+    document.getElementById("your-id").innerHTML = "Please click the button";
+    function functionYouLike(num) {
+      if (num === 1150) {
+        alert("pizza");
+      } else if (num === 191) {
+        document.getElementById("your-id").innerHTML = "Police";
+        console.log("Police come");
+      } else {
+        alert("????");
+      }
+    }
+  </script> 
+</body>
+</html>
