@@ -27,7 +27,7 @@
 ># Find right keyword and answer on google
 
 
-![](./example_vocabulary.png)
+![](./resource/example_vocabulary.png)
 
 
 >## Basic of the most programming languages are the same.
@@ -90,26 +90,26 @@ function test(x){
 ### HTML Basic
 
 + My tutorial file
-  + src directory --> 1_html_basic.html
-  + [./src/1_html_basic.html](./src/1_html_basic.html)
+  + lesson1 directory --> 1_html_basic.html
+  + [./lesson1/1_html_basic.html](./lesson1/1_html_basic.html)
 + How to run html as live server
-![](./how_to_run_html.png)
+![](./resource/how_to_run_html.png)
 + Guide to study HTML
   + [HTML on youtube - 45:19](https://www.youtube.com/watch?v=916GWv2Qs08&ab_channel=freeCodeCamp.org)
   + [Play HTML in w3school](https://www.w3schools.com/html/html_intro.asp)
   + [Study HTML with God](https://www.google.com/search?q=html&rlz=1C1CHBD_enTH893TH893&oq=html&aqs=chrome.0.69i59l4j0i433i512j69i60l3.1068j0j7&sourceid=chrome&ie=UTF-8)
 + Stuff you should know
-![](./html_structure.PNG)
+![](./resource/html_structure.PNG)
 ### WHY CSS ?
 Make website beautiful 
 + My tutorial file
-  + src directory --> 2_playground.html
-  + [./src/2_playground.html](./src/2_playground.html)
+  + lesson1 directory --> 2_playground.html
+  + [./lesson1/2_playground.html](./lesson1/2_playground.html)
 + Guide to study CSS
   + [Study CSS with God](https://www.google.com/search?q=css+tutorial&rlz=1C1CHBD_enTH893TH893&oq=css+tu&aqs=chrome.0.69i59i512j69i57j0i512j0i22i30i625l2j69i60l3.1665j0j7&sourceid=chrome&ie=UTF-8)
   + [CSS on youtube - 1:25:38](https://www.youtube.com/watch?v=ieTHC78giGQ&ab_channel=freeCodeCamp.org)
 + Web responsive (Mobile, tabet, and desktop screen size)
-  + How to see another screen size ![](./responsive_youtube.PNG)
+  + How to see another screen size ![](./resource/responsive_youtube.PNG)
   + [Media query](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
   + [Media query on youtube - 21:16](https://www.youtube.com/watch?v=ZYV6dYtz4HA&ab_channel=DaniKrossing)
   + [Layout for responsive web on youtube - 17:13](https://www.youtube.com/watch?v=68O6eOGAGqA&ab_channel=AngelaDelise)
@@ -140,8 +140,8 @@ Make website beautiful
 + API Calling
   + [Call API in javascript on youtube - 6:34](https://www.youtube.com/watch?v=cuEtnrL9-H0&ab_channel=WebDevSimplified)
   + My tutorial file
-    + src directory --> 4_final_playground.html
-    + [./src/4_final_playground.html](./src/4_final_playground.html)
+    + lesson1 directory --> 4_final_playground.html
+    + [./lesson1/4_final_playground.html](./lesson1/4_final_playground.html)
 ```javascript
     // CALL API GET METHOD
     fetch("http://localhost:3000/contact", {
@@ -183,8 +183,37 @@ Make website beautiful
     });
 ```
 
-
-
+2. Introduction to modern web development
+  + WHY FRONTEND FRAMEWORK ?
+  + INITIALIZE VUE2 PROJECT
+  + DEFAULT PROJECT CODE EXPLANATION AND FILE STRUCTURE
+  + TECHNICAL CONCEPT
+    + * State and Methods
+    + Lifecycle Diagram
+    + Template Syntax
+    + Computed Properties and Watchers
+    + * Components and properties
+    + Connect a web app with API
+## 2. Introduction to modern web development
+  + WHY FRONTEND FRAMEWORK ?
+    + [More detail about front-end framework](https://www.ideamotive.co/blog/best-frontend-frameworks)
+  + INITIALIZE VUE2 PROJECT 
+```console
+npm init vue@2
+```
+![](./resource/how_to_setup_vue.PNG)
+  + DEFAULT PROJECT CODE EXPLANATION AND FILE STRUCTURE
+    + ![](./resource/vue_file_structure.PNG)
+    1. ASSETS - Vue file in project can use file in assets (PNG, GIF, CSS, etc)
+    2. COMPONENTS - reusable code in logic and style to your element
+    ```html
+      <HelloWorld />
+      <your-element>abcdef</your-element>
+    ```
+    3. ROUTER - connect path with vue file in the project
+      + "localhost:5173/about" --> AboutView.vue
+    4. VIEWS - Vue file for router
+    5. APP.VUE - The first file you should take a look
 # Editor.md
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
