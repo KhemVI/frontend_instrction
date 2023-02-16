@@ -1,5 +1,5 @@
 <template>
-  <div class="contract">
+  <div class="contact">
     <div class="contact-info">
       <h4><b>{{ fullname }}</b></h4>
       <p>{{ mobile }}</p>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "Contract",
+  name: "Contact",
   props: ["fullname", "mobile"]
 };
 </script>

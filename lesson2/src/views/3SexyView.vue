@@ -5,9 +5,9 @@
       <input type="text" placeholder="Phone number" v-model="inputMobile" /> 
       <button v-on:click="onClickSave()">Save</button>
     </div>
-    <Contract fullname="Nitinun Mana" mobile="0801911150" />
-    <Contract :fullname="inputFullname" :mobile="inputMobile" />
-    <Contract
+    <Contact fullname="Nitinun Mana" mobile="0801911150" />
+    <Contact :fullname="inputFullname" :mobile="inputMobile" />
+    <Contact
       :fullname="inputFullname" 
       :mobile="inputMobile" 
       v-if="inputFullname !== '' && inputMobile !== ''"
@@ -33,11 +33,11 @@
 </template>
 
 <script>
-import Contract from "@/components/Contract.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   components: {
-    Contract,
+    Contact,
   },
   data() {
     return {

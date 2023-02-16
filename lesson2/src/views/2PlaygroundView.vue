@@ -5,8 +5,8 @@
       <input type="text" placeholder="Phone number" />
       <button>Save</button>
     </div>
-    <Contract fullname="John Doe" mobile="0812345678" />
-    <Contract fullname="Nitinun Mana" mobile="0801911150" />
+    <Contact fullname="John Doe" mobile="0812345678" />
+    <Contact fullname="Nitinun Mana" mobile="0801911150" />
     <HelloWorld />
     <HelloWorld />
   </div>
@@ -14,12 +14,12 @@
 
 <script>
 import HelloWorld from "../components/HelloWorld.vue";
-import Contract from "@/components/Contract.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   components: {
     HelloWorld,
-    Contract
+    Contact
   },
   
   data() {
