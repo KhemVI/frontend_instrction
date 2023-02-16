@@ -188,11 +188,11 @@ Make website beautiful
   + INITIALIZE VUE2 PROJECT
   + DEFAULT PROJECT CODE EXPLANATION AND FILE STRUCTURE
   + TECHNICAL CONCEPT
-    + * State and Methods
+    + * ### State and Methods
     + Lifecycle Diagram
     + Template Syntax
     + Computed Properties and Watchers
-    + * Components and properties
+    + * ### Components and properties
     + Connect a web app with API
 ## 2. Introduction to modern web development
   + WHY FRONTEND FRAMEWORK ?
@@ -204,16 +204,54 @@ npm init vue@2
 ![](./resource/how_to_setup_vue.PNG)
   + DEFAULT PROJECT CODE EXPLANATION AND FILE STRUCTURE
     + ![](./resource/vue_file_structure.PNG)
-    1. ASSETS - Vue file in project can use file in assets (PNG, GIF, CSS, etc)
-    2. COMPONENTS - reusable code in logic and style to your element
+    1. Assets - Vue file in project can use file in assets (PNG, GIF, CSS, etc)
+    2. Components - reusable code in logic and style for your element
     ```html
       <HelloWorld />
       <your-element>abcdef</your-element>
     ```
-    3. ROUTER - connect path with vue file in the project
+    3. Routers - connect vue file in the project with url path
       + "localhost:5173/about" --> AboutView.vue
-    4. VIEWS - Vue file for router
-    5. APP.VUE - The first file you should take a look
+    4. Views - Vue file for router
+    5. App.vue - The first file you should take a look
+## MODERN WEB CORE CONCEPT
++ [State](https://v2.vuejs.org/v2/guide/instance.html#Data-and-Methods)
++ [Components](https://v2.vuejs.org/v2/guide/components.html)
++ [Passing props](https://v2.vuejs.org/v2/guide/components-props.html)
++ [State Management (learn this at your workplace)](https://pinia.vuejs.org/introduction.html)
+
+```html
+This is pseudo code, not the real code
+
+For learning -- state, prop, and components
+
+  <body>
+    <!-- Pass string props -->
+    <my-element fullname="John Doe" mobile="0812345678" />
+    <my-element fullname="Khem" mobile="0801911150" />
+
+    <!-- Pass variable string props -->
+    <my-element fullname=stateFullname mobile=stateMobile />
+  </body>
+  <script>
+    // Just concept you cannot use this in real code
+    var stateFullname = "dog";
+    var stateMobile = "0801911152";
+  </script> 
+```
+## RUN VUE FROM LESSON 2 DIRECTORY
+```bash
+  cd ./lesson2
+  npm install
+  npm run dev
+```
+
+## LEARN MORE ABOUT VUE 2 
++ [Vue 2 docs](https://v2.vuejs.org/v2/guide/index.html)
++ [Inspiration of vue - documentary](https://www.youtube.com/watch?v=OrxmtDw4pVI&ab_channel=Honeypot)
+
+## REAL CODE INTERVIEW OF MY COMPANY
++ aaa
 # Editor.md
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
