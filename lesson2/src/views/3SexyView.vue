@@ -1,27 +1,86 @@
 <template>
   <div class="3-sexy">
-    <h1>This is an about page</h1>
-    <HelloWorld />
-    <HelloWorld />
+    <div style="margin: 10px;">
+      <input type="text" placeholder="Fullname" v-model="inputFullname" /> 
+      <input type="text" placeholder="Phone number" v-model="inputMobile" /> 
+      <button v-on:click="onClickSave()">Save</button>
+    </div>
+    <Contract fullname="Nitinun Mana" mobile="0801911150" />
+    <Contract :fullname="inputFullname" :mobile="inputMobile" />
+    <Contract
+      :fullname="inputFullname" 
+      :mobile="inputMobile" 
+      v-if="inputFullname !== '' && inputMobile !== ''"
+    />
+
+<!-- ----------------------------------------------------------------------------------- -->
+
+    <div style="color: blue; margin-top:50px; ">
+      <p>
+        inputFullname --> {{ inputFullname }}
+      </p>
+      <p>
+        inputMobile -----> {{ inputMobile }}
+      </p>
+      <p>
+        myState ---------> {{ myState }}
+      </p>
+    </div>
+    <p style="color: red;">
+      {{ computedContact }}
+    </p>
   </div>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld.vue"
+import Contract from "@/components/Contract.vue";
 
 export default {
   components: {
-    HelloWorld,
-  }
+    Contract,
+  },
+  data() {
+    return {
+      myState: 1,
+      inputFullname: '',
+      inputMobile: '',
+    };
+  },
+  mounted() {
+    this.myState++;
+  },
+  computed: {
+    computedContact() {
+      return this.inputFullname + ' ' + this.inputMobile;
+    }
+  },
+  methods: {
+    onClickSave() {
+      this.myState = this.myState + 5;
+      alert(this.computedContact);
+    }
+  },
 }
 </script>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+  button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
-}
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 </style>

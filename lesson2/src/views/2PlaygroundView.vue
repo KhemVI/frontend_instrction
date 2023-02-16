@@ -1,12 +1,14 @@
 <template>
   <div class="2-playground">
     <div style="margin: 10px;">
-      <input type="text" placeholder="Fullname" id="fullname" />
-      <input type="text" placeholder="Phone number" id="mobile" />
+      <input type="text" placeholder="Fullname" />
+      <input type="text" placeholder="Phone number" />
       <button>Save</button>
     </div>
     <Contract fullname="John Doe" mobile="0812345678" />
     <Contract fullname="Nitinun Mana" mobile="0801911150" />
+    <HelloWorld />
+    <HelloWorld />
   </div>
 </template>
 
